@@ -1,0 +1,22 @@
+PATH
+  remote: .
+  specs:
+    rails-i18n-check (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (5.14.3)
+    rake (13.0.3)
+
+PLATFORMS
+  x86_64-darwin-19
+
+DEPENDENCIES
+  bundler (~> 2.2)
+  minitest (~> 5.14)
+  rails-i18n-check!
+  rake (~> 13.0)
+
+BUNDLED WITH
+   2.2.7

@@ -1,0 +1,6 @@
+cs:
+  sub:
+    key1: val1
+    sub1:
+      key3: val3
+      key4: val4
