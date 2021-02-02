@@ -1,6 +1,6 @@
 # rails-i18n-check
 
-[![Build Status](https://travis-ci.com/honzasterba/rails-i18n-check.svg?branch=master)](https://travis-ci.com/honzasterba/rails-i18n-check)
+[![Build Status](https://travis-ci.com/honzasterba/rails-i18n-check.svg?branch=main)](https://travis-ci.com/honzasterba/rails-i18n-check)
 
 A simple checker for missing translations in rails i18n config files
 
