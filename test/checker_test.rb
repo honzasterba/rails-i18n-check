@@ -26,7 +26,7 @@ class CheckerTest < Minitest::Test
 
   def test_single_file
     res = run_checker("missing_single_file")
-    assert_equal ['.sub1.key3 ["cs.yml"]', '.key2 ["en.yml"]'], res
+    assert_equal ['.sub1.key3 ["cs.yml"]', '.key2 ["en.yml"]'].sort, res.sort
   end
 
 
@@ -37,8 +37,8 @@ class CheckerTest < Minitest::Test
       '.sub.sub1.key3 ["cs.sub.yml"]',
       '.sub.key2 ["en.sub.yml"]',
       '.key2 ["en.yml"]'
-    ]
-    assert_equal expected, res
+    ].sort
+    assert_equal expected, res.sort
   end
 
   def test_multi_file_ignore
@@ -46,8 +46,8 @@ class CheckerTest < Minitest::Test
     expected = [
       '.sub.key2 ["en.sub.yml"]',
       '.key2 ["en.yml"]'
-    ]
-    assert_equal expected, res
+    ].sort
+    assert_equal expected, res.sort
   end
 
 end
