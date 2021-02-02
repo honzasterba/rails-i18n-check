@@ -21,7 +21,7 @@ And then execute:
 Define a rake task in `lib/tasks`:
 
 ```ruby
-require 'rails-i18n-checker'
+require 'rails-i18n-check'
 namespace :i18n do
   task :check => :environment do
     RailsI18nCheck::Checker.new(%w[en cs], Rails.root).run
